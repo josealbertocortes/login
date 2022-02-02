@@ -1,15 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import Dashbord from './Dashbord';
+import React from 'react';
+import { AppRouting } from './Components/AppRouting';
 
-function App() {
+
+const App = () => {
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-       <Dashbord />
-      </header>
-    </div>
-  );
-}
+  
+  <div className='container ' style={{ height: '100vh' }}>
 
-export default App;
+    
+    <div className='row'>
+      <div className='col mt-5'>
+      
+      <AppRouting />
+
+    
+      </div>
+   
+
+    </div>       
+  </div>);
+};
+
+export default App
